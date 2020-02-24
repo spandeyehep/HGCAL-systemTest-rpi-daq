@@ -90,8 +90,6 @@ for i in range(1000):
 	temp_prof = rt.TProfile(prof_name,prof_name,13,0,13)
 	lg_pulseShape_profile.append(temp_prof)
 
-rt.TProfile("totslow_profile","tot_slow vs event",1000,0,1000)
-
 for i,event in enumerate(inTree):
 	#print "################## Event %d #############"%(event.event)
 	chip_ = event.chip
